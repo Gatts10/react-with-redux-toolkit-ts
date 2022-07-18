@@ -10,11 +10,8 @@ function App() {
 
   const [reservationNameInput, setReservationNameInput] = useState("");
 
-  const reservations = useSelector((state: RootState) => state.reservations.value);
+  const reservations = useSelector((state: RootState) => state.reservation.value);
   const customers = useSelector((state: RootState) => state.customer.value);
-
-  console.log(reservations);
-  console.log(customers);
 
   const dispatch = useDispatch();
 
